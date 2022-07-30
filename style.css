@@ -1,0 +1,96 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+:root {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1,
+h2 {
+  font-family: "游明朝", "YuMincho", serif;
+}
+body {
+  text-align: center;
+  padding: 1em;
+}
+#wrap {
+  margin: 2em auto;
+  max-width: 1080px;
+  box-sizing: content-box;
+  border: double 5px rgb(100, 100, 100);
+  border-radius: 2em;
+}
+header {
+  margin: 1em;
+}
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  justify-content: space-between;
+  align-items: stretch;
+}
+img {
+  margin: 0 auto;
+  max-width: 300px;
+  max-height: 300px;
+}
+section {
+  margin: 2em;
+  padding: 2em;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(200, 200, 200);
+  border-radius: 1em;
+}
+#arrow_wrap {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+#right_allow,
+#down_allow {
+  font-size: 3em;
+}
+#right_allow {
+  display: block;
+}
+#down_allow {
+  display: none;
+}
+input:hover {
+  cursor: pointer;
+}
+p {
+  margin: 1em;
+}
+textarea {
+  resize: none;
+  width: auto;
+}
+@media screen and (max-width: 1080px) {
+  #wrap {
+    max-width: 480px;
+  }
+  main {
+    display: block;
+  }
+  #arrow_wrap {
+    display: flex;
+  }
+  #right_allow {
+    display: none;
+  }
+  #down_allow {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>画像を文字に変換するサイト</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <h1>画像を文字に変換するサイト</h1>
+      </header>
+      <main>
+        <section>
+          <h2>変換したい画像</h2>
+          <img src="" id="preview_img" alt="ここにプレビュー画像が表示されます" />
+          <p><input type="file" id="local_file" accept="image/gif,image/jpeg,image/jpg,image/png" /></p>
+          <p>gif,jpg,pngの3形式の画像のみ対応しています</p>
+        </section>
+        <div id="arrow_wrap">
+          <p id="transition">画像をアップロードすると自動的に変換が開始されます</p>
+          <p id="right_allow"><b>→</b></p>
+          <p id="down_allow"><b>↓</b></p>
+        </div>
+        <section>
+          <h2>変換した<br />テキストデータ</h2>
+          <textarea rows="20" cols="40" readonly>ここにテキストが表示されます</textarea>
+        </section>
+      </main>
+      <footer>
+        <p><small>2021 ©kakononaka.com</small></p>
+      </footer>
+    </div>
+  </body>
+</html>
